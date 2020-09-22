@@ -7,7 +7,6 @@ import Body2 from "./body2";
 import Testimonial from "./testimonials";
 import Newsevents from "./newevents";
 import Appointment from "./appointment";
-import '../assets/scss/style.scss'
 
 const Home = () => {
   return (

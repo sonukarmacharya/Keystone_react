@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
-//import {Link} from "react-router"
+import Vision from "./components/vision";
 
 const App = () => {
   return (
     <div>
-      this is index
-      {/* <Home/> */}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/vis">
+            <Vision />
+          </Route>
+        </Switch>
+      </Router>
     </div>
-     
-   
   );
 };
 
