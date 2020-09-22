@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
 import Logo from "../assets/img/logo/logo.png";
-import { Link as L, BrowserRouter as Router } from "react-router-dom";
+import {
+  Link as L,
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Vision from "./vision";
 
 export default class header extends Component {
   render() {
     return (
-      <Router>
+      
         <div className="header-area header-transparrent ">
           <div className="main-header header-sticky">
             <div className="container">
@@ -98,7 +104,15 @@ export default class header extends Component {
             </div>
           </div>
         </div>
-      </Router>
+      //   <Router>
+      //     <Switch>
+      //       {/* <Route exact path="/" component={Home} /> */}
+      //       <Route exact path="/vis">
+      //         <Vision />
+      //       </Route>
+      //     </Switch>
+      //   </Router>
+      // </Router>
     );
   }
 }

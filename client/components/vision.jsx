@@ -1,5 +1,10 @@
 import React from "react";
-
+import Header from "./header";
 export default function vision() {
-  return <div >vision</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
+
